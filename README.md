@@ -5,4 +5,4 @@
 
 ### SingleLayer FeedForward Network
 
-![](images/sfn.png)
+![](images/sfn.PNG)
