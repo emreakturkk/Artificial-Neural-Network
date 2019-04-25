@@ -6,3 +6,8 @@
 ### SingleLayer FeedForward Network
 
 ![](images/sfn.PNG)
+
+### MultiLayer FeedForward Network
+
+![](images/mfn.PNG)
+

@@ -529,8 +529,8 @@ namespace MultilayerLearning {
 	{
 		srand((unsigned int)time(NULL));
 
-		c1 = 0.5;
-		c2 = 0.7;
+		c1 = (double)rand() / RAND_MAX;
+		c2 = (double)rand() / RAND_MAX;
 		m = (double)rand() / RAND_MAX;
 
 		label4->Text = "c1 : " + c1.ToString() + "\n" + "c2 : " + c2.ToString() + "\n" + "m1 : " + m.ToString();
@@ -549,10 +549,12 @@ namespace MultilayerLearning {
 			line[i][2] = PICTURE_BOX_WIDTH / 2;											  // maxx
 			line[i][3] = -(V[i][0] * PICTURE_BOX_WIDTH /  2 + BIAS * V[i][2]) / V[i][1];  // maxy
 		}
+		/*
 		label5->Text = "";
 		for (int i = 0; i < hiddenNeuron; i++)
 				for (int j = 0; j < dimension + 1; j++)
 					label5->Text += "V" + (i + 1).ToString() + (j + 1).ToString() + "= " + V[i][j].ToString() + "\n";
+		*/
 
 		if (classSize == 2) {
 			for (int i = 0; i < hiddenNeuron + 1; i++) {
@@ -574,9 +576,11 @@ namespace MultilayerLearning {
 				}
 			}
 		}
+		/*
 		//for (int i = 0; i < classSize; i++)
 			for (int j = 0; j < hiddenNeuron + 1; j++)
 				label5->Text += "W" + (0 + 1).ToString() + (j + 1).ToString() + "= " + W[0][j].ToString() + "\n";
+		*/
 	}
 
 	private: System::Void coordinate_paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
