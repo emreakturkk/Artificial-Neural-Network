@@ -531,9 +531,9 @@ namespace MultilayerLearning {
 
 		c1 = (double)rand() / RAND_MAX;
 		c2 = (double)rand() / RAND_MAX;
-		m = (double)rand() / RAND_MAX;
+		m =  (double)rand() / RAND_MAX;
 
-		label4->Text = "c1 : " + c1.ToString() + "\n" + "c2 : " + c2.ToString() + "\n" + "m1 : " + m.ToString();
+		label4->Text = "c1 : " + c1.ToString() + "\n" + "c2 : " + c2.ToString() + "\n" + "m : " + m.ToString();
 
 		for (int i = 0; i < hiddenNeuron; i++) 
 		{
